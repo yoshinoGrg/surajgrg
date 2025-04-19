@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suraj Grg Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+  <!-- 🔥 Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="run.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🧊 Overlay Content -->
+  <div class="bg-overlay">
+    <header>
+      <nav>
+        <div class="left"><a href="#about-section">SurajGrg</a></div>
+        <div class="right">
+          <a href="#about-section">About</a>
+          <a href="#skills-section">Skills</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about-section" class="section">
+      <h2>Hii Peoples, I'm Suraj Gurung!</h2>
+      <div class="headshot">
+        <picture>
+          <img src="head.jpg" alt="headshot"  class="zoom-img"  />
+
+
+        </picture>
+      </div>
+      <div class="bio">
+        <p>Hey! I'm Suraj, BTech first year student at Uttaranchal University, Dehradun.</p>
+        <p>I love coding, volleyball, football, anime, and good stories. Let’s build and vibe ✨</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="skills-section" class="section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <i class="fa-brands fa-python"></i>
+        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-swift"></i>
+        <i class="fa-brands fa-figma"></i>
+        <i class="fa-brands fa-git-alt"></i>
+        <i class="fa-brands fa-github-alt"></i>
+        <i class="fa-solid fa-database"></i>
+        <i class="devicon-r-plain"></i>
+        <i class="devicon-c-plain-wordmark"></i>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year"></span> SURAJ GRG. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
